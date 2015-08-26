@@ -61,23 +61,23 @@ var HazardResponse = function (params) {
   _createCurve = function (response) {
     var data,
         metadata,
-        yvals;
+        yvalues;
 
     data = response.data;
     metadata = response.metadata;
 
-    yvals = _spatiallyInterpolate(metadata.latitude, metadata.longitude, data);
+    yvalues = _spatiallyInterpolate(metadata.latitude, metadata.longitude, data);
 
     return HazardCurve({
       label: metadata.imt.display,
       period: _PERIOD_TO_NUMBER[metadata.imt.value],
-      data: HazardUtil.coallesce(metadata.xvals, yvals)
+      data: HazardUtil.coallesce(metadata.xvalues, yvalues)
     });
   };
 
   _spatiallyInterpolate = function (latitude, longitude, data) {
     var bottom,
-        numYVals,
+        numYValues,
         result,
         top,
         y0,
@@ -86,36 +86,36 @@ var HazardResponse = function (params) {
         y3;
 
     result = [];
-    numYVals = data.length;
+    numYValues = data.length;
 
-    if (numYVals === 1) {
-      result = data[0].yvals;
-    } else if (numYVals === 2) {
+    if (numYValues === 1) {
+      result = data[0].yvalues;
+    } else if (numYValues === 2) {
       y0 = data[0];
       y1 = data[1];
 
       if (y0.latitude === y1.latitude) {
         // Latitudes match, interpolate with respect to longitude
-        result = HazardUtil.interpolateCurve(y0.longitude, y0.yvals,
-            y1.longitude, y1.yvals, longitude);
+        result = HazardUtil.interpolateCurve(y0.longitude, y0.yvalues,
+            y1.longitude, y1.yvalues, longitude);
       } else if (y0.longitude === y1.longitude) {
         // Latitudes match, interpolate with respect to latitude
-        result = HazardUtil.interpolateCurve(y0.latitude, y0.yvals,
-            y1.latitude, y1.yvals, latitude);
+        result = HazardUtil.interpolateCurve(y0.latitude, y0.yvalues,
+            y1.latitude, y1.yvalues, latitude);
       }
-    } else if (numYVals === 4) {
+    } else if (numYValues === 4) {
       y0 = data[0];
       y1 = data[1];
       y2 = data[2];
       y3 = data[3];
 
       // Interpolate top (first) two points with respect to longitude
-      top = HazardUtil.interpolateCurve(y0.longitude, y0.yvals,
-          y1.longitude, y1.yvals, longitude);
+      top = HazardUtil.interpolateCurve(y0.longitude, y0.yvalues,
+          y1.longitude, y1.yvalues, longitude);
 
       // Interpolate bottom (second) two points with respect to longitude
-      bottom = HazardUtil.interpolateCurve(y2.longitude, y2.yvals,
-          y3.longitude, y3.yvals, longitude);
+      bottom = HazardUtil.interpolateCurve(y2.longitude, y2.yvalues,
+          y3.longitude, y3.yvalues, longitude);
 
       // Interpolate top/bottom (interpolated) results with respect to latitude
       result = HazardUtil.interpolateCurve(y0.latitude, top,

@@ -10,7 +10,7 @@ var _coallesce,
     _interpolateLogLog;
 
 
-_coallesce = function (xvals, yvals) {
+_coallesce = function (xvalues, yvalues) {
   var i,
       len,
       x,
@@ -18,11 +18,11 @@ _coallesce = function (xvals, yvals) {
       y;
 
   xy = [];
-  len = Math.min(xvals.length, yvals.length);
+  len = Math.min(xvalues.length, yvalues.length);
 
   for (i = 0; i < len; i++) {
-    x = xvals[i];
-    y = yvals[i];
+    x = xvalues[i];
+    y = yvalues[i];
 
     if (!x || !y) {
       continue;

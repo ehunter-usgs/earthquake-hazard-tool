@@ -38,7 +38,7 @@ module.exports = {
         },
         "xlabel": "Ground Motion (g)",
         "ylabel": "Annual Frequency of Exceedence",
-        "xvals": [
+        "xvalues": [
           0.005,
           0.007,
           0.0098,
@@ -66,7 +66,7 @@ module.exports = {
           "datasetid": 6,
           "latitude": 34.05,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.4649,
             0.3898,
             0.3148,
@@ -93,7 +93,7 @@ module.exports = {
           "datasetid": 6,
           "latitude": 34.05,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.4698,
             0.3941,
             0.3185,
@@ -120,7 +120,7 @@ module.exports = {
           "datasetid": 6,
           "latitude": 34,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.4628,
             0.388,
             0.3134,
@@ -147,7 +147,7 @@ module.exports = {
           "datasetid": 6,
           "latitude": 34,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.4679,
             0.3925,
             0.3172,
@@ -206,7 +206,7 @@ module.exports = {
         },
         "xlabel": "Ground Motion (g)",
         "ylabel": "Annual Frequency of Exceedence",
-        "xvals": [
+        "xvalues": [
           0.005,
           0.007,
           0.0098,
@@ -235,7 +235,7 @@ module.exports = {
           "datasetid": 1,
           "latitude": 34.05,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.4668,
             0.36392,
             0.27793,
@@ -263,7 +263,7 @@ module.exports = {
           "datasetid": 1,
           "latitude": 34.05,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.47276,
             0.36816,
             0.28053,
@@ -291,7 +291,7 @@ module.exports = {
           "datasetid": 1,
           "latitude": 34,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.4645,
             0.36206,
             0.27644,
@@ -319,7 +319,7 @@ module.exports = {
           "datasetid": 1,
           "latitude": 34,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.47043,
             0.36639,
             0.2792,
@@ -379,7 +379,7 @@ module.exports = {
         },
         "xlabel": "Ground Motion (g)",
         "ylabel": "Annual Frequency of Exceedence",
-        "xvals": [
+        "xvalues": [
           0.005,
           0.0075,
           0.0113,
@@ -407,7 +407,7 @@ module.exports = {
           "datasetid": 8,
           "latitude": 34.05,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.6179,
             0.5509,
             0.4653,
@@ -434,7 +434,7 @@ module.exports = {
           "datasetid": 8,
           "latitude": 34.05,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.6239,
             0.5564,
             0.4702,
@@ -461,7 +461,7 @@ module.exports = {
           "datasetid": 8,
           "latitude": 34,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.6152,
             0.5484,
             0.4631,
@@ -488,7 +488,7 @@ module.exports = {
           "datasetid": 8,
           "latitude": 34,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.6213,
             0.5541,
             0.4682,
@@ -547,7 +547,7 @@ module.exports = {
         },
         "xlabel": "Ground Motion (g)",
         "ylabel": "Annual Frequency of Exceedence",
-        "xvals": [
+        "xvalues": [
           0.005,
           0.0075,
           0.0113,
@@ -575,7 +575,7 @@ module.exports = {
           "datasetid": 5,
           "latitude": 34.05,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.73536,
             0.58071,
             0.44236,
@@ -602,7 +602,7 @@ module.exports = {
           "datasetid": 5,
           "latitude": 34.05,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.74358,
             0.58793,
             0.44784,
@@ -629,7 +629,7 @@ module.exports = {
           "datasetid": 5,
           "latitude": 34,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.73144,
             0.57768,
             0.44002,
@@ -656,7 +656,7 @@ module.exports = {
           "datasetid": 5,
           "latitude": 34,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.73944,
             0.58485,
             0.44558,
@@ -715,7 +715,7 @@ module.exports = {
         },
         "xlabel": "Ground Motion (g)",
         "ylabel": "Annual Frequency of Exceedence",
-        "xvals": [
+        "xvalues": [
           0.0025,
           0.00375,
           0.00563,
@@ -744,7 +744,7 @@ module.exports = {
           "datasetid": 7,
           "latitude": 34.05,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.5051,
             0.4123,
             0.3228,
@@ -772,7 +772,7 @@ module.exports = {
           "datasetid": 7,
           "latitude": 34.05,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.5098,
             0.4161,
             0.3257,
@@ -800,7 +800,7 @@ module.exports = {
           "datasetid": 7,
           "latitude": 34,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.503,
             0.4106,
             0.3216,
@@ -828,7 +828,7 @@ module.exports = {
           "datasetid": 7,
           "latitude": 34,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.5079,
             0.4146,
             0.3246,
@@ -888,7 +888,7 @@ module.exports = {
         },
         "xlabel": "Ground Motion (g)",
         "ylabel": "Annual Frequency of Exceedence",
-        "xvals": [
+        "xvalues": [
           0.0025,
           0.00375,
           0.00563,
@@ -917,7 +917,7 @@ module.exports = {
           "datasetid": 4,
           "latitude": 34.05,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.6054,
             0.44912,
             0.31977,
@@ -945,7 +945,7 @@ module.exports = {
           "datasetid": 4,
           "latitude": 34.05,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.60974,
             0.45248,
             0.32204,
@@ -973,7 +973,7 @@ module.exports = {
           "datasetid": 4,
           "latitude": 34,
           "longitude": -118.05,
-          "yvals": [
+          "yvalues": [
             0.60284,
             0.44736,
             0.3186,
@@ -1001,7 +1001,7 @@ module.exports = {
           "datasetid": 4,
           "latitude": 34,
           "longitude": -118,
-          "yvals": [
+          "yvalues": [
             0.60661,
             0.45025,
             0.32057,

@@ -99,7 +99,7 @@ try {
                 'vs30' => $vs30->toArray(),
                 'xlabel' => 'Ground Motion (g)',
                 'ylabel' => 'Annual Frequency of Exceedence',
-                'xvals' => $dataset->iml
+                'xvalues' => $dataset->iml
               ),
               'data' => $curveFactory->getAll($latitude, $longitude,
                 $dataset->id, $region->gridspacing)
